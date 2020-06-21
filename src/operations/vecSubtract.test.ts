@@ -6,7 +6,9 @@ describe("vecSubtract", () => {
     const inputVector = new Vec2(1, 2);
     const outputVector = vecSubtract(inputVector, inputVector);
 
+    // @ts-ignore
     expect(outputVector.x).toEqual(0);
+    // @ts-ignore
     expect(outputVector.y).toEqual(0);
   });
 
@@ -14,7 +16,9 @@ describe("vecSubtract", () => {
     const inputVector = new Vec2(1, 2);
     const outputVector = vecSubtract(inputVector, inputVector, inputVector);
 
-    expect(outputVector.x).toEqual(-1);
-    expect(outputVector.y).toEqual(-2);
-  })
+    // @ts-ignore
+    expect(outputVector.x).toEqual(- 1);
+    // @ts-ignore
+    expect(outputVector.y).toEqual(- 2);
+  });
 });
