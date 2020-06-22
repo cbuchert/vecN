@@ -1,11 +1,11 @@
 import { Vec2 } from "../vectors/Vec2";
-import { scaleDown } from "./scaleDown";
+import { scaleDownVector } from "./scaleDownVector";
 
-describe("scaleDown", () => {
+describe("scaleDownVector", () => {
   it("scales a vector down by a scale factor.", () => {
     const inputVector = new Vec2(10, 20);
     const scaleFactor = 10;
-    const outputVector = scaleDown(inputVector, scaleFactor);
+    const outputVector = scaleDownVector(inputVector, scaleFactor);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(1);

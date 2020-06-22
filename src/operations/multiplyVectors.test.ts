@@ -1,10 +1,10 @@
 import { Vec2 } from "../vectors/Vec2";
-import { multiply } from "./multiply";
+import { multiplyVectors } from "./multiplyVectors";
 
-describe("multiply", () => {
+describe("multiplyVectors", () => {
   it("multiplies two vectors.", () => {
     const inputVector = new Vec2(2, 3);
-    const outputVector = multiply(inputVector, inputVector);
+    const outputVector = multiplyVectors(inputVector, inputVector);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(4);
@@ -14,7 +14,7 @@ describe("multiply", () => {
 
   it("multiplies multiple vectors.", () => {
     const inputVector = new Vec2(2, 3);
-    const outputVector = multiply(inputVector, inputVector, inputVector);
+    const outputVector = multiplyVectors(inputVector, inputVector, inputVector);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(8);
