@@ -1,7 +1,7 @@
 import { VecN } from "../vectors/VecN";
 import { multiplyVectors } from "./multiplyVectors";
-import { sumVector } from "./sumVector";
+import { vectorLength } from "./vectorLength";
 
 export function getDotProduct(...params: VecN[]): number {
-  return sumVector(multiplyVectors(...params));
+  return vectorLength(multiplyVectors(...params));
 }
