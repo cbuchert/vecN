@@ -1,6 +1,6 @@
 import { VecN } from "../vectors/VecN";
 
-export function vecSubtract(...params: VecN[]): VecN {
+export function subtract(...params: VecN[]): VecN {
   // TODO: Check params to make sure they're all vectors of the same length.
   const keys = [...params[ 0 ].keys];
   const values = params.reduce((vectorDifferences, currentVector, i) => {

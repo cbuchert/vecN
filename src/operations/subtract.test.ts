@@ -1,10 +1,10 @@
 import { Vec2 } from "../vectors/Vec2";
-import { vecSubtract } from "./vecSubtract";
+import { subtract } from "./subtract";
 
-describe("vecSubtract", () => {
+describe("subtract", () => {
   it("subtracts two vectors.", () => {
     const inputVector = new Vec2(1, 2);
-    const outputVector = vecSubtract(inputVector, inputVector);
+    const outputVector = subtract(inputVector, inputVector);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(0);
@@ -14,7 +14,7 @@ describe("vecSubtract", () => {
 
   it("subtracts multiple vectors.", () => {
     const inputVector = new Vec2(1, 2);
-    const outputVector = vecSubtract(inputVector, inputVector, inputVector);
+    const outputVector = subtract(inputVector, inputVector, inputVector);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(- 1);

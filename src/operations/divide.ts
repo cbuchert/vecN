@@ -1,6 +1,6 @@
 import { VecN } from "../vectors/VecN";
 
-export function vecDivide(...params: VecN[]): VecN {
+export function divide(...params: VecN[]): VecN {
   const keys = [ ...params[ 0 ].keys ];
   const values = params.reduce((vectorQuotient, currentVector, i) => {
     if (i === 0) return vectorQuotient;

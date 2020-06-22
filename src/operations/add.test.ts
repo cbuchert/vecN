@@ -1,10 +1,10 @@
 import { Vec2 } from "../vectors/Vec2";
-import { vecAdd } from "./vecAdd";
+import { add } from "./add";
 
-describe("vecAdd", () => {
+describe("add", () => {
   it("adds two vectors of the same type.", () => {
     const inputVector = new Vec2(1, 2);
-    const outputVector = vecAdd(inputVector, inputVector);
+    const outputVector = add(inputVector, inputVector);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(2);
@@ -14,7 +14,7 @@ describe("vecAdd", () => {
 
   it("adds multiple vectors of the same type.", () => {
     const inputVector = new Vec2(1, 2);
-    const outputVector = vecAdd(inputVector, inputVector, inputVector);
+    const outputVector = add(inputVector, inputVector, inputVector);
 
     // @ts-ignore
     expect(outputVector.x).toEqual(3);
